@@ -1,0 +1,169 @@
+header {
+    background-color: #8ba8b2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 50px; 
+    font-weight: bold; 
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header h3 {
+    font-size: 50px; 
+    font-weight: bold; 
+}
+
+header h4 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+header img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.section img {
+    width: 160px; 
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-box {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    border: 2px solid #8ba8b2
+}
+
+.text {
+    color: #333;
+    text-align: center;
+}
+
+.introduction h2 {
+    color: #8ba8b2;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.introduction p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.linkedin {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c1d3c9;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(50% - 20px);
+    border: 2px solid #8ba8b2;
+    box-sizing: border-box;
+}
+
+.languages {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.languages img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    background-color: #d0dfe8;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button {
+    color: #648995;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #8ba8b2;
+}
+
+.resume-pdf {
+    width: 50%; 
+    height: 600px; 
+    border: none;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    color: #2d7b9d; 
+}
+
+a:hover {
+    color: #c1d3c9;
+}
+
+#theme-toggle {
+    color: #333333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio</title>
+    <link id="theme-style" rel="stylesheet" href="style1.css">
+    <script>
+        function toggleTheme() {
+            var currentTheme = localStorage.getItem('theme') || 'style1.css';
+            var newTheme = currentTheme === 'style1.css' ? 'style2.css' : 'style1.css';
+            
+            localStorage.setItem('theme', newTheme);
+            document.getElementById('theme-style').setAttribute('href', newTheme);
+        }
+    
+        // Apply the saved theme when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            var savedTheme = localStorage.getItem('theme') || 'style1.css';
+            document.getElementById('theme-style').setAttribute('href', savedTheme);
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="Technical.html" class="nav-button">Technical Portfolio</a>
+        <a href="Qualifications.html" class="nav-button">Qualifications</a>
+        <a href="Service.html" class="nav-button">Community Service</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+    </nav>
+    <header>
+        <h3>TECHNICAL PORTFOLIO</h3>
+    </header>
+    <main>
+        <div class="content">
+            <div class="section">
+                <h2>Project 1:</h2>
+                <h2>SUPERMATHIO</h2>
+                <div class="text">
+                    <p>I developed an application programmed in Java aimed to help high school students prepare for IB mathematics via playing the popular arcade game “Super Mario”. This project consisted of 3 aesthetically attractive graphical user interfaces: an admin console to manage users and content, a teacher interface to add teaching material, math questions, and view students’ scores, and a student interface that combines math quizzes and Super Mario. A video demonstration of this project is linked below.</p>
+                    <a href="https://youtu.be/KZROwlGqkRg" target="_blank">--SUPERMATHIO DEMO LINK--</a>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Project 2:</h2>
+                <h2>Game Development Project</h2>
+                <div class="text">
+                    <p>In collaboration with a classmate, I developed a Python script that offers users the opportunity to play three popular games: Wordle, Hangman, and Tic-Tac-Toe. Our “Wordle” program Replicates Wordle by the New York Times, where the user has 6 guesses to guess a word right. If the user’s guess contains a correct letter in the correct place then the letter turns green. However, if the letter is correct but in the incorrect place then it turns yellow. Our Hangman game provides a user interface and visualizations for in-game process. For Tic-Tac-Toe, we implemented an automated opponent, allowing users to play against the computer. Players can choose to play as X (taking the first turn) or O (playing second), adding strategic depth to the game.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Project 3:</h2>
+                <h2>Panda Express - Point of Sale and Inventory Solution</h2>
+                <div class="text">
+                    <p>For my next project, I'm excited to dive into developing a point-of-sale and inventory management system for a Panda Express restaurant. I'll be working with a team to create a comprehensive solution that includes a PostgreSQL database hosted on AWS and a Java-based graphical user interface. Our system will cater to both cashiers and managers, allowing for efficient order processing and inventory analysis. This project will give me hands-on experience with full-stack development, cloud services, and collaborative software engineering practices like pair programming and code inspections. Overall, this project presents an excellent opportunity to apply my skills to a real-world scenario and gain valuable experience in developing enterprise-level software solutions.</p>
+                </div>
+            </div>
+        </div>
+            <header> 
+                <h4>PROGRAMMING LANGUAGES</h4>
+            </header>
+            <div class="languages">
+                <img src="c++.png" alt="C++">
+                <img src="html.png" alt="HTML">
+                <img src="javascript.png" alt="JavaScript">
+                <img src="css.png" alt="CSS">
+                <img src="python.png" alt="Python">
+                <img src="java.png" alt="Java">
+            </div>
+    </main>
+</body>
+</html>

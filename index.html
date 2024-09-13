@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Area</title>
+    <link id="theme-style" rel="stylesheet" href="style1.css">
+    <script>
+        function toggleTheme() {
+            var currentTheme = localStorage.getItem('theme') || 'style1.css';
+            var newTheme = currentTheme === 'style1.css' ? 'style2.css' : 'style1.css';
+            
+            localStorage.setItem('theme', newTheme);
+            document.getElementById('theme-style').setAttribute('href', newTheme);
+        }
+    
+        // Apply the saved theme when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            var savedTheme = localStorage.getItem('theme') || 'style1.css';
+            document.getElementById('theme-style').setAttribute('href', savedTheme);
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div id="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="Technical.html" class="nav-button">Technical Portfolio</a>
+        <a href="Qualifications.html" class="nav-button">Qualifications</a>
+        <a href="Service.html" class="nav-button">Community Service</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+    </nav>
+    <div class="main-container"></div>
+    <header>
+        <h1>LAYLA DONIA</h1>
+        <h2>Computer Science Major at Texas A&M University</h2>
+        <img src="profile_pic.png">
+        <img src="linkedin.png" class="linkedin">
+        <a href="https://www.linkedin.com/in/layla-donia" target="_blank">LinkedIn</a>
+    </header>
+    <main>
+        <div class="welcome-section">
+            <div class="text-box">
+                <div class="text">
+                    <h2>Welcome!</h2>
+                    <p>Hi! I'm a junior at <a href="https://www.tamu.edu/index.html" target="_blank">Texas A&M University</a> studying for a Bachelor's degree in Computer Science and a minor in Business. I love programming and exploring how business and technology work together. I'm excited to share my journey with you through this portfolio!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h3><a href="Technical.html">TECHNICAL PORTFOLIO</a></h3>
+                <img src="laptop.png">
+            </div>
+            <div class="section">
+                <h3><a href="Qualifications.html">QUALIFICATIONS</a></h3>
+                <img src="checklist.png">
+            </div>
+            <div class="section">
+                <h3><a href="Service.html">COMMUNITY SERVICE</a></h3>
+                <img src="service.png">
+            </div>
+            <div class="section">
+                <h3><a href="contact.html">CONTACT</a></h3>
+                <img src="contact.png">
+            </div>
+        </div>
+    </main>
+    <div>   
+</body>
+</html>
